@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via-Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="./images/icon-img.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+</head>
+<body>
+  <section class="top-section">
+    <!-- Top logo -->
+  <div class="top-logo">
+    <img src="images/logo.png" class="car-logo">
+  </div>
+  <!-- Top-right icons -->
+  <div class="top-right-icons">
+    <img src="images/search-icon.png" class="search-icon"/>
+    <div class="dropdown d-inline-block">
+        <img src="images/icon.png">
+        <i class="fa-solid fa-angle-down dropdown-toggle icon-dropdown" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="profile-wrapper">
+        <img src="images/Avatar.png" class="profile-image" alt="User" />
+        <div class="notification-badge">3</div>
+      </div>
+  </div>
+   <div class="container main-box">
+    <h1 class="main-text">Share your ride with passengers<br>
+    to save <span class="highlight">more on </span>travel costs</h1>
+  <div class="ride-container">
+    <div class="row">
+       <!-- Leaving From -->
+      <div class="col-lg-3">
+        <div class="text-start">
+          <div class="ride-label">Leaving From</div>
+          <input type="text" class="input-box" placeholder="Enter city" value="Al Khobra">
+        </div>
+      </div>
+         <!-- Swap Icon -->
+      <div class="col-lg-1">
+        <div class=" position-relative">
+          <img src="images/arrow1.png"  alt="Swap Icon" class="" width="40"> 
+        </div>
+      </div>
+          <!-- Going To -->
+      <div class="col-lg-3">
+        <div class="text-start">
+          <div class="ride-label">Going To</div>
+          <input type="text" class="input-box" placeholder="Enter destination" value="Ar Riyadh">
+        </div>
+      </div>
+      <!-- Divider -->
+      <div class="col-lg-1">
+        <div class="divider"></div>
+      </div>
+      <!-- Passengers -->
+      <div class="col-lg-4">
+        <div class="text-start position-relative passenger-wrapper">
+          <div class="text-start1 my-3">
+            <img src="images/user.png" class="user-img">
+            <select class="ride-select">
+              <option selected>2 Passengers</option>
+              <option>1 Passenger</option>
+              <option>3 Passengers</option>
+              <option>4 Passengers</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Button -->
+    <button class="publish-btn">
+      <i class="bi bi-plus-circle"></i> Publish a Ride
+    </button>
+  </div>
+  </div>
+
+
+  </section>
+
+  
+  <!-- about section -->
+
+  <section class="about-section">
+    <div class="container ">
+      <!-- First Row -->
+      <div class="row align-items-center mb-5">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <h2 class="section-title">Publish your ride in just minutes</h2>
+          <p class="sub-title mt-4">Effortlessly publish your ride in just a few minutes, allowing you to<br>connect with passengers quickly and efficiently. By sharing your<br>journey, you can save on travel costs, reduce your environmental<br>impact, and make your trip more enjoyable. Experience a seamless and<br> hassle-free way to travel while building meaningful connections.</p>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6 text-center">
+          <img src="images/about-img.png" alt="Ride Sharing" class="ride-image">
+        </div>
+      </div>
+    
+        <div class="box-section row  align-items-start">
+          <!-- First Column -->
+          <div class="col-md-4 column-content">
+            <div class="icon-text">
+              <span class="icon text-success">👤</span>
+              <h5 class="sub-hd mb-0">Create a account</h5>
+            </div>
+            <p class="abt-hd mt-2  text-muted">
+              Add your profile picture, a few words about you<br> and your phone number to increase trust<br> between members.
+            </p>
+          </div>
+      
+          <!-- Second Column with Divider -->
+          <div class="col-md-4 column-content border-start border-end">
+            <div class="icon-text">
+              <span class="icon text-danger">🚗</span>
+              <h5 class="sub-hd mb-0">Publish your ride</h5>
+            </div>
+            <p class="abt-hd mt-2 text-muted">
+              Specify departure, arrival, ride date, and check our suggested price to attract your first passengers and earn ratings.
+            </p>
+          </div>
+      
+          <!-- Third Column -->
+          <div class="col-md-4 column-content">
+            <div class="icon-text">
+              <span class="icon text-warning">⚡</span>
+              <h5 class="sub-hd mb-0">Accept booking requests</h5>
+            </div>
+            <p class="abt-hd mt-2 text-muted">
+              Review passenger profiles and accept their requests to ride with you. That’s how easy it is to start saving on travel costs!
+            </p>
+          </div>
+        </div>
+ 
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- about1 section -->
+
+  <section class="about-section1">
+    <div class="container ">
+      <div class="row align-items-center">
+        <!-- Left Column: Image -->
+        <div class="col-md-5 image-section">
+          <img src="images/about-img1.png" class="abt-img1" alt="Happy people in a car">
+        </div>
+    
+        <!-- Right Column: Text Blocks -->
+        <div class="col-md-7 text-section">
+          <div class="text-block">
+            <h5 class="abt-main">Drive</h5>
+            <p class="abt-sub" >Stay committed to your original plans while maximizing the potential of your journey by filling the empty seats in your car. By sharing the ride, you can save on travel expenses, reduce environmental impact, and enjoy a pleasant and efficient trip.</p>
+          </div>
+          <div class="text-block">
+            <h5 class="abt-main">Share</h5>
+            <p class="abt-sub">Enhance your travel experience by enjoying great company along the way. Connect with travelers from diverse backgrounds, share stories, and create lasting memories together on a journey you’ll never forget.</p>
+          </div>
+          <div class="text-block">
+            <h5 class="abt-main">Save</h5>
+            <p class="abt-sub">Manage expenses like tolls, gas, electricity, and more with ease. Share costs fairly and transparently with fellow travelers, making your journeys more affordable, efficient, and hassle-free for everyone involved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- testimonial-section  -->
+
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-md-5 testimonial-heading">
+          <h2 class="testimonial-hd">What our drivers<br>are saying</h2>
+          <p class="testimonial-sub">As a carpool driver, I find this app efficient, user-friendly, and reliable. It simplifies ride-sharing, connects me with passengers, and saves travel costs effectively.</p>
+          <a href="#" class="btn-custom">
+            Offer a Ride →
+          </a>
+        </div>
+  
+        <!-- Right Column (Carousel) -->
+        <div class="col-md-7">
+          <div class="owl-carousel owl-theme">
+           
+            <!-- Carousel Item -->
+            <div class="carousel-card">
+              <!-- <span class="quote-icon"></span> -->
+               <img src="images/quote.png" class="quote-icon" alt="quote">
+              <p class="quote-text">
+                “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
+              </p>
+              <p class="user-name mt-3">Mr James Jacob</p>
+              <img src="images/user1.png" class="user-img" alt="User">
+            </div>
+            <div class="carousel-card">
+              <!-- <span class="quote-icon"></span> -->
+               <img src="images/quote.png" class="quote-icon" alt="quote">
+              <p class="quote-text">
+                “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
+              </p>
+              <p class="user-name mt-3">Mr James Jacob</p>
+              <img src="images/user1.png" class="user-img" alt="User">
+            </div>
+            <div class="carousel-card">
+              <!-- <span class="quote-icon"></span> -->
+               <img src="images/quote.png" class="quote-icon" alt="quote">
+              <p class="quote-text">
+                “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
+              </p>
+              <p class="user-name mt-3">Mr James Jacob</p>
+              <img src="images/user1.png" class="user-img" alt="User">
+            </div>
+            <div class="carousel-card">
+              <!-- <span class="quote-icon"></span> -->
+               <img src="images/quote.png" class="quote-icon" alt="quote">
+              <p class="quote-text">
+                “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
+              </p>
+              <p class="user-name mt-3">Mr James Jacob</p>
+              <img src="images/user1.png" class="user-img" alt="User">
+            </div>
+            <div class="carousel-card">
+              <!-- <span class="quote-icon"></span> -->
+               <img src="images/quote.png" class="quote-icon" alt="quote">
+              <p class="quote-text">
+                “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
+              </p>
+              <p class="user-name mt-3">Mr James Jacob</p>
+              <img src="images/user1.png" class="user-img" alt="User">
+            </div>
+
+
+            <!-- Duplicate for More Items -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features section -->
+  <section class="features-section">
+    <div class="container">
+      <!-- Title -->
+      <h2 class="mian-text mb-5 text-center">We’re here every step <br> of the way</h2>
+  
+      <!-- 3 Columns -->
+      <div class="row box-section">
+        <!-- Column 1 -->
+        <div class="box-sec col-md-4 mb-4">
+          <div class="mb-3">
+            <img src="images/box-icon.png" alt="24/7 Service" width="50">
+          </div>
+          <h5 class="sub-hd">At your service 24/7</h5>
+          <p class="subh-hd1 text-muted">
+            Our team is at your disposal to answer any<br>questions by email or social media. You can<br>also have a live chat directly with experienced<br>members.
+          </p>
+        </div>
+  
+        <!-- Column 2 -->
+        <div class="box-sec col-md-4 mb-4">
+          <div class="mb-3">
+            <img src="images/box-icon2.png" alt="Car Support" width="50">
+          </div>
+          <h5 class="sub-hd">Car at your side</h5>
+          <p class="subh-hd1 text-muted">
+            For just 2 €, benefit from the reimbursement of<br>up to 1,500€ of your excess when you publish a<br> ride as a driver on Car.
+          </p>
+        </div>
+  
+        <!-- Column 3 -->
+        <div class="box-sec col-md-4 mb-4">
+          <div class="mb-3">
+            <img src="images/box-icon1.png" alt="Secure Info" width="50">
+          </div>
+          <h5 class="sub-hd">100% secure information</h5>
+          <p class="subh-hd1 text-muted">
+            Our team is dedicated to the protection of your<br>data, which is always 100% confidential thanks<br>to monitoring tools, secure navigation and<br>encrypted data.
+          </p>
+        </div>
+      </div>
+      <!-- Horizontal line -->
+      <hr class="mt-1" style="border-top: 1px solid rgb(30, 29, 29);">
+    </div>
+  </section>
+
+
+  <section class="help-section">
+    <body class="bg-light py-5">
+
+      <div class="container">
+        <h2 class="main-heading text-center  mb-4">Everything you need as <br> a driver, in our <span class="text-danger">Help Centre</span></h2>
+    
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-6">
+            <!-- Card 1 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                How do I set the passenger contribution for my ride?
+                <button class="btn btn-light toggle-btn">+</button> 
+              </div>
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">
+                  We recommend a contribution per passenger on your rides. These suggestions help you set fair contributions...
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                What should I do if there’s an error with my ride?
+                <button class="btn btn-light toggle-btn">+</button> 
+               
+              </div>
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                  Check your ride details and contact support if needed.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="card mb-3 position-relative">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                How do I cancel my published ride?
+                <button class="btn btn-light toggle-btn">+</button> 
+                
+              </div>
+              <div id="collapse3" class="collapse">
+                <div class="card-body">
+                  Go to your rides and select the one to cancel, then click on 'Cancel'.
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Second Column -->
+          <div class="col-md-6">
+            <!-- Card 4 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                How do I cancel a carpool ride as a driver of a ride?
+                <button class="btn btn-light toggle-btn">+</button>
+              </div>
+              <div id="collapse4" class="collapse">
+                <div class="card-body">
+                  Similar process as cancelling a published ride.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                When do I get my money?
+                <button class="btn btn-light toggle-btn">+</button>
+              </div>
+              <div id="collapse5" class="collapse">
+                <div class="card-body">
+                  Payouts are usually made within 48 hours after the ride ends.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                How do I start publish ride?
+                <button class="btn btn-light toggle-btn">+</button>
+              </div>
+              <div id="collapse6" class="collapse">
+                <div class="card-body">
+                  Use the 'Publish Ride' button in your dashboard to begin.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="card mb-3">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                How do I cancel my published ride?
+                <button class="btn btn-light toggle-btn">+</button>
+              </div>
+              <div id="collapse7" class="collapse">
+                <div class="card-body">
+                  Access your ride list and select the ride you want to cancel.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <!-- Social Row -->
+      <footer class="footer-black">
+        <div class="container py-4 border-bottom border-secondary">
+          <div class="d-flex justify-content-between align-items-center">
+            
+            <!-- Logo Left -->
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="ViaCar Logo" style="height: 50px;">
+              <div class="text-white mt-2">ViaCar</div>
+            </div>
+      
+            <!-- Social Icons Right -->
+            <div class="d-flex gap-4">
+              <div class="text-white d-flex align-items-center gap-1">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook.png" /> Facebook
+              </div>
+              <div class="text-white d-flex align-items-center gap-1">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/twitterx.png" /> Twitter
+              </div>
+              <div class="text-white d-flex align-items-center gap-1">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" /> LinkedIn
+              </div>
+              <div class="text-white d-flex align-items-center gap-1">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" /> Instagram
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+      
+
+      <!-- Footer Main Row -->
+      <div class="row text-white pt-4">
+        <!-- Logo & App Download -->
+        <div class="col-md-4 mb-4">
+          
+          <p class="footer-sub">Download our<br>App now!</p>
+          <div class="download-buttons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-5 mb-3">
+          <h5 class="footer-sub">How can we help you</h5>
+          <a href="#" class="footer-sub d-block mb-2 text-decoration-underline">Get in touch</a>
+          <div class="contact-pill">+966 1234567890</div>
+          <div class="contact-pill">info@democompany.com</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h5 class="quick">Quick Links</h5>
+          <ul class="list-unstyled mt-3">
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom text-center text-white py-2">
+        © 2025. All rights reserved
+      </div>
+      
+    </div>
+  </footer>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a95728139c.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      margin: 20,
+      loop: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 5000
+    });
+  });
+</script>
+</body>
+</html>
