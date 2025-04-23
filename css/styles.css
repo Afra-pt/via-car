@@ -2,14 +2,20 @@
 
 
 body {
-    background: url('../images/bg.png') no-repeat center center;
-    background-size: cover !important;
-    font-family: "Kanit", sans-serif !important;
-    color: white;
-    width: 100% !important;
-    height: 100vh;
-    object-fit: cover !important;
-    overflow-x: hidden !important;
+  background: url('../images/bg.png') no-repeat center center;
+  background-size: cover !important;
+  font-family: "Kanit", sans-serif !important;
+  color: white;
+  width: 100% !important;
+  background-position: center !important;
+  height: 100vh;
+  object-fit: cover !important;
+  overflow-x: hidden !important;
+
+   
+  }
+  .top-section{
+   
   }
   :root {
     --primary-color: rgba(0, 0, 0, 1);
@@ -19,7 +25,12 @@ body {
     --border-color: #ddd;
     --input-bg: #fff; */ 
   }
- 
+
+
+
+
+
+
   .top-section{
     width: 100%;
     height: 70vh; }
@@ -145,12 +156,12 @@ body {
   .ride-container {
     background-color: white;
     border-radius: 60px;
-    padding: 20px 30px;
-    max-width: 1000px;
+    padding: 20px 20px;
+    max-width: 959px;
     margin: 40px auto;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
 
@@ -270,6 +281,10 @@ body {
     width: 100%;
     font-size: 16px;
   }
+  .user-img{
+
+
+  }
   
   /* Container to position the icon absolutely */
   
@@ -279,8 +294,8 @@ body {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     pointer-events: none; /* Allows click-through */
   }
   
@@ -295,12 +310,13 @@ body {
 
   /* about */
   .about-section{
- 
+  
     width: 100%;
     padding-top: 100px !important;
    
   
   }
+
   
 
   .section-title {
@@ -366,7 +382,7 @@ body {
   }
   .sub-hd{
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
   }
   .abt-hd{
@@ -376,8 +392,9 @@ body {
     padding-left: 40px;
     font-weight: 300;
     font-size: 16px;
-    line-height: 185%;
+    line-height: 165%;
     color: var(--secondary-color);
+    font-size: 15px;
   }
   .box-section{
     padding-bottom: 40px;
@@ -387,6 +404,7 @@ body {
   .about-section1{
     width: 100%;
     padding: 70px 0px;
+    background: white;
    
   }
   .image-section img {
@@ -477,7 +495,9 @@ body {
     color: #f3eeee;
   }
   .user-img{
-    width: 30px;height: 34px;
+    width: 20px;height: 24px;
+    margin-top: 4px;
+    margin-left: 20px;
   }
   .quote{
     width: 59px;
@@ -533,9 +553,10 @@ body {
     transition: transform 0.2s ease;
   }
 
-  img:hover {
+  /* img:hover {
     transform: scale(1.1);
-  }
+    overflow: hidden !important;
+  } */
   .mian-text{
   
     font-weight: 500;
@@ -545,7 +566,7 @@ body {
   }
   .sub-hd{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 129%;
   }
   .subh-hd1{
@@ -573,7 +594,8 @@ body {
   /*  */
   .features-section{
     padding-top: 80px;
-    /* background-color: white; */
+
+   background: white; 
   }
 
   .main-heading{
@@ -829,68 +851,20 @@ body {
 
 .help-section{
   padding: 70px 0px;
+  background: white;
   
+}
+.Horizontal{
+  border-top: 1px solid rgb(30, 29, 29) !important; 
+  background: white !important;
 }
 
 
   
 
-  
- 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @media only screen and (min-width: 100px) and (max-width: 765px) {
+    
     .main-text {
       font-size: 29px;
       line-height: 32px;
@@ -914,7 +888,7 @@ body {
       height: 41px;
     }
     .section-title {
-      font-size: 36px;
+      font-size: 24px;
       font-weight: 500;
       color: var(--primary-color);
       padding: 3px 10px;
@@ -931,13 +905,24 @@ body {
     display: none !important;
 
   }
+  .ride-image {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 13px;
+}
+  .column-content {
+    padding: 0px 20px;
+}
   .abt-hd br {
     display: none;
   }
+  .abt-hd{
+    font-size: 12px;
+  }
   .sub-title{
-    padding: 5px 9px;
-    font-size: 17px;
-    line-height: 189%;
+    padding: 0px 9px;
+    font-size: 12px;
+    line-height: 183%;
   }
   .text-section {
     padding: 42px 20px;
@@ -947,7 +932,7 @@ body {
 
 }
 .testimonial-heading .testimonial-hd {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 109.00000000000001%;
 }
@@ -962,6 +947,13 @@ body {
 .quote-text{
   font-size: 12px;
 }
+.subh-hd1 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(66, 66, 66, 1);
+  
+}
 
 
 .carousel-card {
@@ -973,15 +965,12 @@ body {
     color: #fff;
 }
 
-element.style {
-}
+
 .owl-carousel .owl-item img {
     display: block;
     width: 100%;
 }
 
-element.style {
-}
 .owl-carousel .owl-item img {
     display: block;
     width: 100%;
@@ -1011,7 +1000,7 @@ element.style {
     }
     .mian-text {
       font-weight: 500;
-      font-size: 33px;
+      font-size: 23px;
       line-height: 120%;
       color: var(--primary-color);
   }
@@ -1024,7 +1013,7 @@ element.style {
 }
 .main-heading {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 23px;
   padding-bottom: 25px;
   line-height: 125%;
   color: rgba(10, 32, 51, 1);
@@ -1040,11 +1029,18 @@ element.style {
       padding: 23px 0px;
   }
   .box-sec {
-    padding: 0px 25px;
+    padding: 0px 34px;
 }
 .subh-hd1 br{
   display: none !important;
 
+}
+.card-header {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
   
     .input-box,
@@ -1080,9 +1076,129 @@ element.style {
       left: -5px;
       top: 14px;
   }
+  .text-block .abt-main {
+    font-size: 20px;
+  }
+  .text-block {
+    margin-bottom: 11px;
+  }
+
+  .text-block .abt-sub {
+    font-size: 12px;
+    line-height: 165%;
+
   }
   /* .footer{
     padding: 0px 20px !important;
   }
    */
+
+
+   @media only screen and (min-width: 766px) and (max-width: 1024px) {
+
+    .main-text br{
+      display: none !important;
+      
+    }
+    .main-text{
+      font-size: 45px;
+    }
+    .section-title br{
+      display: none;
+
+    }
+    .section-title{
+      font-size: 22px;
+    }
+    .sub-title br{
+      display: none;
+    }
+    .sub-title{
+      font-size: 12px;
+      line-height: 180%;
+    }
+    .sub-hd{
+      font-size: 14px;
+    }
+    .abt-hd br{
+      display: none;
+     
+
+    
+
+   }
+   .abt-hd{
+    font-size: 11px;
+    line-height: 172%;
+
+   }
+   .abt-sub br{
+    display: none;
+   }
+   .box-section {
+    padding-bottom: 0px;
+}
   
+.carousel-card img {
+    width: 71px !important;
+    height: 71px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 71% !important;
+    top: 58% !important;
+}
+
+.text-block .abt-main {
+ font-weight: 400;
+ margin-bottom: 5px;
+ font-size: 19px;
+ color: var(--primary-color);
+}
+.text-block .abt-sub {
+color: var(--secondary-color);
+font-size: 11px;
+font-weight: 300;
+line-height: 179%;
+margin-bottom: 0;
+}
+.text-section {
+padding: 0px 6px;
+}
+.text-block {
+margin-bottom: 9px;
+}
+.testimonial-heading .testimonial-hd {
+font-size: 34px;
+}
+.quote-text br{
+display: none;
+}
+.quote-text{
+font-size: 11px;
+line-height: 183%;
+}
+.testimonial-sub br{
+display: none;
+}
+.testimonial-heading {
+padding-bottom: 0px;
+}
+.mian-text{
+font-size: 35px;
+}
+.subh-hd1 br{
+display: none;
+}
+.subh-hd1{
+font-size: 12px;
+}
+.main-heading br{
+display: none;
+}
+.main-heading{
+font-size: 38px;
+}
+   }
+
+

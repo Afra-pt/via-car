@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
+<!-- aio animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     
 </head>
 <body>
@@ -28,7 +32,7 @@
   <div class="top-right-icons">
     <img src="images/search-icon.png" class="search-icon"/>
     <div class="dropdown d-inline-block">
-        <img src="images/icon.png">
+        <img src="images/icon.png" class="icon-img1">
         <i class="fa-solid fa-angle-down dropdown-toggle icon-dropdown" data-bs-toggle="dropdown" aria-expanded="false" ></i>
 
         <ul class="dropdown-menu dropdown-menu-end">
@@ -44,12 +48,13 @@
       </div>
   </div>
    <div class="container main-box">
-    <h1 class="main-text">Share your ride with passengers<br>
+    <h1 class="main-text" data-aos="zoom-in">Share your ride with passengers<br>
     to save <span class="highlight">more on </span>travel costs</h1>
-  <div class="ride-container">
-    <div class="row">
+  <div class="ride-container"  data-aos="fade-up"
+  data-aos-duration="2000" >
+    <div class="row"  >
        <!-- Leaving From -->
-      <div class="col-lg-3">
+      <div class="col-lg-3" >
         <div class="text-start">
           <div class="ride-label">Leaving From</div>
           <input type="text" class="input-box" placeholder="Enter city" value="Al Khobra">
@@ -92,7 +97,9 @@
       <i class="bi bi-plus-circle"></i> Publish a Ride
     </button>
   </div>
+  
   </div>
+ 
 
 
   </section>
@@ -103,22 +110,25 @@
   <section class="about-section">
     <div class="container ">
       <!-- First Row -->
-      <div class="row align-items-center mb-5">
+      <div class="row align-items-center ">
         <!-- Left Column -->
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <h2 class="section-title">Publish your ride in just minutes</h2>
           <p class="sub-title mt-4">Effortlessly publish your ride in just a few minutes, allowing you to<br>connect with passengers quickly and efficiently. By sharing your<br>journey, you can save on travel costs, reduce your environmental<br>impact, and make your trip more enjoyable. Experience a seamless and<br> hassle-free way to travel while building meaningful connections.</p>
         </div>
         <!-- Right Column -->
-        <div class="col-md-6 text-center">
+    
+        <div class="col-md-6 text-center" data-aos="fade-left">
+         
           <img src="images/about-img.png" alt="Ride Sharing" class="ride-image">
         </div>
+      
       </div>
     
         <div class="box-section row  align-items-start">
           <!-- First Column -->
-          <div class="col-md-4 column-content">
-            <div class="icon-text">
+          <div class="col-md-4 column-content" >
+            <div class="icon-text" >
               <span class="icon text-success">👤</span>
               <h5 class="sub-hd mb-0">Create a account</h5>
             </div>
@@ -133,7 +143,7 @@
               <span class="icon text-danger">🚗</span>
               <h5 class="sub-hd mb-0">Publish your ride</h5>
             </div>
-            <p class="abt-hd mt-2 text-muted">
+            <p class="abt-hd mt-2 ">
               Specify departure, arrival, ride date, and check our suggested price to attract your first passengers and earn ratings.
             </p>
           </div>
@@ -144,7 +154,7 @@
               <span class="icon text-warning">⚡</span>
               <h5 class="sub-hd mb-0">Accept booking requests</h5>
             </div>
-            <p class="abt-hd mt-2 text-muted">
+            <p class="abt-hd mt-2 ">
               Review passenger profiles and accept their requests to ride with you. That’s how easy it is to start saving on travel costs!
             </p>
           </div>
@@ -161,22 +171,22 @@
     <div class="container ">
       <div class="row align-items-center">
         <!-- Left Column: Image -->
-        <div class="col-md-5 image-section">
+        <div class="col-md-5 image-section" data-aos="fade-right">
           <img src="images/about-img1.png" class="abt-img1" alt="Happy people in a car">
         </div>
     
         <!-- Right Column: Text Blocks -->
         <div class="col-md-7 text-section">
           <div class="text-block">
-            <h5 class="abt-main">Drive</h5>
+            <h5 class="abt-main "  data-aos="zoom-in">Drive</h5>
             <p class="abt-sub" >Stay committed to your original plans while maximizing the potential of your journey by filling the empty seats in your car. By sharing the ride, you can save on travel expenses, reduce environmental impact, and enjoy a pleasant and efficient trip.</p>
           </div>
           <div class="text-block">
-            <h5 class="abt-main">Share</h5>
+            <h5 class="abt-main" data-aos="zoom-in">Share</h5>
             <p class="abt-sub">Enhance your travel experience by enjoying great company along the way. Connect with travelers from diverse backgrounds, share stories, and create lasting memories together on a journey you’ll never forget.</p>
           </div>
           <div class="text-block">
-            <h5 class="abt-main">Save</h5>
+            <h5 class="abt-main" data-aos="zoom-in">Save</h5>
             <p class="abt-sub">Manage expenses like tolls, gas, electricity, and more with ease. Share costs fairly and transparently with fellow travelers, making your journeys more affordable, efficient, and hassle-free for everyone involved.</p>
           </div>
         </div>
@@ -191,7 +201,7 @@
     <div class="container">
       <div class="row align-items-center">
         <!-- Left Column -->
-        <div class="col-md-5 testimonial-heading">
+        <div class="col-md-5 testimonial-heading " data-aos="zoom-in">
           <h2 class="testimonial-hd">What our drivers<br>are saying</h2>
           <p class="testimonial-sub">As a carpool driver, I find this app efficient, user-friendly, and reliable. It simplifies ride-sharing, connects me with passengers, and saves travel costs effectively.</p>
           <a href="#" class="btn-custom">
@@ -204,9 +214,10 @@
           <div class="owl-carousel owl-theme">
            
             <!-- Carousel Item -->
+             
             <div class="carousel-card">
-              <!-- <span class="quote-icon"></span> -->
-               <img src="images/quote.png" class="quote-icon" alt="quote">
+               <!-- <h2 class="quote-icon"><img src="images/quote.png" class="quote-img"></h2>  -->
+               
               <p class="quote-text">
                 “Thanks to NITTE’ 100% result-oriented branding and promotion strategy<br> that we could reach out to a lot more clients.”	“Thanks to NITTE’ 100%<br> result-oriented branding and promotion strategy.”
               </p>
@@ -268,8 +279,8 @@
       <!-- 3 Columns -->
       <div class="row box-section">
         <!-- Column 1 -->
-        <div class="box-sec col-md-4 mb-4">
-          <div class="mb-3">
+        <div class="box-sec col-md-4 mb-4" >
+          <div class="mb-3" data-aos="fade-right">
             <img src="images/box-icon.png" alt="24/7 Service" width="50">
           </div>
           <h5 class="sub-hd">At your service 24/7</h5>
@@ -279,8 +290,8 @@
         </div>
   
         <!-- Column 2 -->
-        <div class="box-sec col-md-4 mb-4">
-          <div class="mb-3">
+        <div class="box-sec col-md-4 mb-4" >
+          <div class="mb-3" data-aos="fade-right">
             <img src="images/box-icon2.png" alt="Car Support" width="50">
           </div>
           <h5 class="sub-hd">Car at your side</h5>
@@ -291,7 +302,7 @@
   
         <!-- Column 3 -->
         <div class="box-sec col-md-4 mb-4">
-          <div class="mb-3">
+          <div class="mb-3" data-aos="fade-right">
             <img src="images/box-icon1.png" alt="Secure Info" width="50">
           </div>
           <h5 class="sub-hd">100% secure information</h5>
@@ -301,7 +312,7 @@
         </div>
       </div>
       <!-- Horizontal line -->
-      <hr class="mt-1" style="border-top: 1px solid rgb(30, 29, 29);">
+      <hr class="Horizontal">
     </div>
   </section>
 
@@ -312,7 +323,7 @@
       <div class="container">
         <h2 class="main-heading text-center  mb-4">Everything you need as <br> a driver, in our <span class="text-danger">Help Centre</span></h2>
     
-        <div class="row">
+        <div class="row"  data-aos="zoom-in">
           <!-- First Column -->
           <div class="col-md-6">
             <!-- Card 1 -->
@@ -433,19 +444,19 @@
             </div>
       
             <!-- Social Icons Right -->
-            <div class="d-flex gap-4">
+            <div class="d-flex gap-3">
               <div class="text-white d-flex align-items-center gap-1">
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook.png" /> Facebook
               </div>
               <div class="text-white d-flex align-items-center gap-1">
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/twitterx.png" /> Twitter
               </div>
-              <div class="text-white d-flex align-items-center gap-1">
+              <!-- <div class="text-white d-flex align-items-center gap-1">
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" /> LinkedIn
               </div>
               <div class="text-white d-flex align-items-center gap-1">
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" /> Instagram
-              </div>
+              </div> -->
             </div>
       
           </div>
@@ -524,6 +535,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- aio animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
   $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
@@ -535,6 +549,15 @@
       autoplayTimeout: 5000
     });
   });
+</script>
+<!-- aio animation -->
+<script>
+  AOS.init({
+      duration: 1400,
+  });
+  AOS.init({
+      disable: 'mobile',
+  })
 </script>
 </body>
 </html>
